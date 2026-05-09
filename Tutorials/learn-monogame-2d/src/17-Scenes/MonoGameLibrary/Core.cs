@@ -139,7 +139,7 @@ public class Core : Game
         // Update the audio controller.
         Audio.Update();
 
-        if (ExitOnEscape && Input.Keyboard.WasKeyJustPressed(Keys.Escape))
+        if (ExitOnEscape && Input.Keyboard.IsKeyDown(Keys.Escape))
         {
             Exit();
         }
